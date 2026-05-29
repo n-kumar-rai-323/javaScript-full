@@ -1,12 +1,16 @@
 
 public class pattern{
     public static void main(String[] args) {
-        int n =4;
-        for(int line=1; line<=n; line++){
-            for(int star=1; star<=4-line+1; star++){
-                System.out.print("*");
-            }
-            System.out.println();
+        int n = 5;
+        char ch = 'A';
+        // outer loop
+        for(int i=1; i<=n; i ++ ){
+                // inner loop 
+                for(int chs = 1; chs <= i; chs++){
+                    System.out.print(ch);
+                    ch ++;
+                }
+                System.out.println();
         }
     }
 }
