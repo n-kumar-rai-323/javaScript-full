@@ -17,5 +17,5 @@ console.log(add(3,4))
 
 
 // 2. Arrow Function  =>
-const square = n=> n*n;
+const square = n => n*n;
 console.log(square(4))

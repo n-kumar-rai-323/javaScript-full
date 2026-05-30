@@ -13,8 +13,12 @@ let choice = Number(prompt("FOOD MENU\n" +
     "Enter Your Choice: "))
 let quantity = Number(prompt("Enter quantity: "))
 
-let total = 0
-let itemName = ""
+let total = 0;
+let itemName = "";
+let discount = 0;
+let vat = 0;
+let delivaryCharge =100;
+let gerandTotal = 0;
 
 switch (choice) {
     case 1:
@@ -42,3 +46,11 @@ if (total > 0) {
         "Total Bill: Rs. " + total);
 
 }
+
+// Invalid Quality if quantity <=0
+// Discount 10 above Rs. 2000
+// VAT 13%
+// Delivery charge Fixed Rs.100
+// Final Bill subTotal + VAT + Delivery
+
+https://github.com/ankit804/Real-World.git
