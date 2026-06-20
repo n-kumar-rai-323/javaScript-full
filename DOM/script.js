@@ -42,7 +42,8 @@
 
 let btn = document.querySelector("button")
 
-btn.addEventListener("click", function(){
+btn.addEventListener("click", function(event){
+    console.dir(event)
    let text = document.querySelector("h3");
    let randomColor = getRandomColor()
    text.innerText = randomColor
